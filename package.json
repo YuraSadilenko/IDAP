@@ -1,0 +1,29 @@
+{
+  "name": "idap",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuraSadilenko/IDAP.git"
+  },
+  "author": "yura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuraSadilenko/IDAP/issues"
+  },
+  "homepage": "https://github.com/YuraSadilenko/IDAP#readme"
+}
