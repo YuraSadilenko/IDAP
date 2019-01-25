@@ -1,10 +1,23 @@
-.html {
+html {
   font-size: 10px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
-.body {
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.upgrade-box {
+  position: relative;
+}
+
+.upgrade-box__item {
+  position: absolute;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 2rem 5rem;
 }
