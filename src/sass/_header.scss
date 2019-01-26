@@ -1,4 +1,15 @@
 .header {
   background-color: $bg-color-main;
   padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__dashboard {
+    vertical-align:center;
+  }
+
+  &__online {
+    
+  }
+
 }
