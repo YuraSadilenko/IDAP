@@ -1,9 +1,11 @@
 .btn-long {
   display: inline-block;
-  font-size: 1.6rem;
-  padding: .8rem 1rem;
+  vertical-align: middle;
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: .6rem .8rem;
   line-height: 2rem;
-  border: 2px solid $dark-grey;
+  border: 1px solid $dark-grey;
   border-radius: 10rem;
   text-transform: capitalize;
   text-decoration: none;

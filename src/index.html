@@ -11,72 +11,93 @@
   <header>
     <div class="header">
       <div class="header__dashboard">
-        <a href ="#" class="btn-round btn-round--red btn-round--rotate u-margin-right-m">
+        <button class="btn-round btn-round--red btn-round--rotate u-margin-right-m">
           <svg class="btn-round__refresh" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 489.533 489.533" style="enable-background:new 0 0 489.533 489.533;" xml:space="preserve" width="512px" height="512px">
             <g>
               <path d="M268.175,488.161c98.2-11,176.9-89.5,188.1-187.7c14.7-128.4-85.1-237.7-210.2-239.1v-57.6c0-3.2-4-4.9-6.7-2.9   l-118.6,87.1c-2,1.5-2,4.4,0,5.9l118.6,87.1c2.7,2,6.7,0.2,6.7-2.9v-57.5c87.9,1.4,158.3,76.2,152.3,165.6   c-5.1,76.9-67.8,139.3-144.7,144.2c-81.5,5.2-150.8-53-163.2-130c-2.3-14.3-14.8-24.7-29.2-24.7c-17.9,0-31.9,15.9-29.1,33.6   C49.575,418.961,150.875,501.261,268.175,488.161z" fill="#FFFFFF"/>
             </g>
           </svg>
-        </a>
+        </button>
 
-        <a href="#" class="btn-long">dashbord</a>
+        <button class="btn-long">dashbord</button>
       </div>
       <div class="header__online">
-        <a href ="#" class="btn-round btn-round--green btn-round--scale u-margin-right-m">
+        <button href ="#" class="btn-round btn-round--green btn-round--scale u-margin-right-m">
           <svg class="btn-round__down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve">
             <g>
               <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z" fill="#FFFFFF"/>
             </g>
           </svg>
-        </a>
+        </button>
     
-        <a href="#" class="btn-long">dashbord</a>
+        <button class="btn-long">dashbord</button>
       </div>
     </div>
   </header>
   <main>
-    <div class="tab">
-      <div class="tab__project"></div>
-      <div class="tab__message"></div>
-      <div class="tab__free"></div>
+    <div class="tab" id="tab">
+      <button class="tab__project active"> 
+        <svg class="project__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 41.301 41.301" style="enable-background:new 0 0 41.301 41.301;" xml:space="preserve" width="20px" height="20px">
+          <path d="M20.642,0c5.698,0,10.857,2.317,14.602,6.047c3.73,3.746,6.047,8.905,6.047,14.603  c0,5.698-2.317,10.857-6.047,14.603c-3.746,3.73-8.904,6.047-14.602,6.047S9.786,38.983,6.056,35.253  C2.31,31.507,0.008,26.349,0.008,20.65c0-5.698,2.301-10.857,6.047-14.603C9.786,2.317,14.944,0,20.642,0L20.642,0z M31.166,19.523  c0.619,0,1.111,0.508,1.111,1.127c0,0.619-0.492,1.127-1.111,1.127H20.674h-0.032c-0.413,0-0.778-0.238-0.968-0.571l-0.016-0.016  l0,0l-0.016-0.032l0,0v-0.016l0,0l-0.016-0.032l0,0l-0.016-0.032l0,0v-0.016l0,0l-0.016-0.032l0,0l-0.016-0.016l0,0v-0.032l0,0  l-0.016-0.032l0,0v-0.016l0,0l-0.016-0.032l0,0v-0.032l0,0v-0.016v-0.016l-0.016-0.016l0,0v-0.032l0,0v-0.032l0,0V20.73l0,0v-0.016  l0,0v-0.032l0,0V20.65l0,0V7.206c0-0.619,0.492-1.111,1.111-1.111c0.619,0,1.127,0.492,1.127,1.111v12.317H31.166z M33.657,7.635  c-3.333-3.333-7.936-5.381-13.015-5.381S10.96,4.301,7.627,7.635C4.31,10.968,2.246,15.571,2.246,20.65  c0,5.079,2.063,9.682,5.381,13.016c3.333,3.333,7.936,5.381,13.015,5.381s9.682-2.048,13.015-5.381  c3.333-3.333,5.397-7.936,5.397-13.016C39.054,15.571,36.991,10.968,33.657,7.635L33.657,7.635z" fill="#d5d5d5"/>
+        </svg>
+        active project
+      </button>
+      <button class="tab__message">message</button>
+      <div class="tab__free">Search project, user, tasks etc...</div>
     </div>
 
-    <div class="progress-block">
-      <div class="progress-block__search"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-      <div class="progress-block__items"></div>
-    </div>
+    <div class="main-blocks">
+      <div class="progress-block">
+        <div class="progress-block__search">
+          <form action="get">
+            <input type="text" name="" placeholder="Search project with Name, Task, etc...">
+            <select name="newProject">
+              <option value="project 1">project 1</option>
+              <option value="project 2">project 2</option>
+              <option value="project 3">project 3</option>
+            </select>
+            <button class="btn-round btn-round--red btn-round--rotate u-margin-right-m">
+              <p>+</p>
+            </button>
 
-    <div class="news">
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
-      <div class="news__item"></div>
+          </form>
+        </div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <div class="progress-block__items"></div>
+        <!-- <a href="#" class="progress-block__archiv">project archiv</a> -->
+      </div>
+
+      <div class="news">
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+        <div class="news__item"></div>
+      </div>
     </div>
   </main>
   

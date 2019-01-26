@@ -1,0 +1,47 @@
+.tab {
+  display: flex;
+  background-color: $bg-color-main;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  border-top: 1px solid $border-color;
+  margin-bottom: 3rem;
+
+  &__project {
+    flex-grow: 1;
+    text-align: center;
+    background-color: $bg-color-sub;
+    border: 1px solid $border-color;
+    border-top: none;
+    border-left: none;
+    padding: 1.5rem 2.5rem;
+  }
+
+  &__message {
+    flex-grow: 1;
+    text-align: center;
+    background-color: $bg-color-sub;
+    border: 1px solid $border-color;
+    border-top: none;
+    border-left: none;
+    padding: 1.5rem 2.5rem;
+  }
+
+  &__free {
+    flex-grow: 4;
+    text-align: center;
+    border-bottom: 1px solid $border-color;
+    padding: 1.5rem 7rem 1.5rem 2rem;
+    text-align: right;
+  }
+
+  &__project:focus,
+  &__message:focus,
+  &__free:focus {
+    outline: none;
+  }
+}
+
+.active {
+  background-color: #fff;
+  border-bottom: none;
+}
