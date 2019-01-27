@@ -1,5 +1,12 @@
 .news {
+  width: 25%;
+  height: 70vh;
+  overflow: hidden;
   border: 1px solid $border-color;
-  padding: 2rem 5rem;
-  width: 40%;
+
+
+  &__item {
+    border-bottom: 1px solid $border-color;
+    padding: 3rem 2rem;
+  }
 }
