@@ -8,116 +8,228 @@
   <title>IDAP Test Task</title>
 </head>
 <body>
-  <header>
-    <div class="header">
-      <div class="header__dashboard">
-        <button class="btn-round btn-round--red btn-round--rotate u-margin-right-m">
-          <svg class="btn-round__refresh" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 489.533 489.533" style="enable-background:new 0 0 489.533 489.533;" xml:space="preserve" width="512px" height="512px">
-            <g>
-              <path d="M268.175,488.161c98.2-11,176.9-89.5,188.1-187.7c14.7-128.4-85.1-237.7-210.2-239.1v-57.6c0-3.2-4-4.9-6.7-2.9   l-118.6,87.1c-2,1.5-2,4.4,0,5.9l118.6,87.1c2.7,2,6.7,0.2,6.7-2.9v-57.5c87.9,1.4,158.3,76.2,152.3,165.6   c-5.1,76.9-67.8,139.3-144.7,144.2c-81.5,5.2-150.8-53-163.2-130c-2.3-14.3-14.8-24.7-29.2-24.7c-17.9,0-31.9,15.9-29.1,33.6   C49.575,418.961,150.875,501.261,268.175,488.161z" fill="#FFFFFF"/>
-            </g>
-          </svg>
-        </button>
+  <div class="navigation">
 
-        <button class="btn-long">dashbord</button>
-      </div>
-      <div class="header__online">
-        <button href ="#" class="btn-round btn-round--green btn-round--scale u-margin-right-m">
-          <svg class="btn-round__down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve">
-            <g>
-              <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z" fill="#FFFFFF"/>
-            </g>
-          </svg>
-        </button>
-    
-        <button class="btn-long">dashbord</button>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="tab" id="tab">
-      <button class="tab__project active"> 
-        <svg class="project__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 41.301 41.301" style="enable-background:new 0 0 41.301 41.301;" xml:space="preserve" width="20px" height="20px">
-          <path d="M20.642,0c5.698,0,10.857,2.317,14.602,6.047c3.73,3.746,6.047,8.905,6.047,14.603  c0,5.698-2.317,10.857-6.047,14.603c-3.746,3.73-8.904,6.047-14.602,6.047S9.786,38.983,6.056,35.253  C2.31,31.507,0.008,26.349,0.008,20.65c0-5.698,2.301-10.857,6.047-14.603C9.786,2.317,14.944,0,20.642,0L20.642,0z M31.166,19.523  c0.619,0,1.111,0.508,1.111,1.127c0,0.619-0.492,1.127-1.111,1.127H20.674h-0.032c-0.413,0-0.778-0.238-0.968-0.571l-0.016-0.016  l0,0l-0.016-0.032l0,0v-0.016l0,0l-0.016-0.032l0,0l-0.016-0.032l0,0v-0.016l0,0l-0.016-0.032l0,0l-0.016-0.016l0,0v-0.032l0,0  l-0.016-0.032l0,0v-0.016l0,0l-0.016-0.032l0,0v-0.032l0,0v-0.016v-0.016l-0.016-0.016l0,0v-0.032l0,0v-0.032l0,0V20.73l0,0v-0.016  l0,0v-0.032l0,0V20.65l0,0V7.206c0-0.619,0.492-1.111,1.111-1.111c0.619,0,1.127,0.492,1.127,1.111v12.317H31.166z M33.657,7.635  c-3.333-3.333-7.936-5.381-13.015-5.381S10.96,4.301,7.627,7.635C4.31,10.968,2.246,15.571,2.246,20.65  c0,5.079,2.063,9.682,5.381,13.016c3.333,3.333,7.936,5.381,13.015,5.381s9.682-2.048,13.015-5.381  c3.333-3.333,5.397-7.936,5.397-13.016C39.054,15.571,36.991,10.968,33.657,7.635L33.657,7.635z" fill="#d5d5d5"/>
-        </svg>
-        active project
-      </button>
-      <button class="tab__message">message</button>
-      <div class="tab__free">Search project, user, tasks etc...</div>
-    </div>
+  </div>
 
-    <div class="main-blocks">
-      <div class="progress-block">
-        <div class="progress-block__search">
-          <form class="progress-block__form" action="get">
-            <input class="progress-block__input" type="text" name="" placeholder="Search project with Name, Task, etc...">
-            <select class="progress-block__select u-margin-right-m" name="newProject">
-              <option value="project 1">project 1</option>
-              <option value="project 2">project 2</option>
-              <option value="project 3">project 3</option>
-            </select>
-            <button class="btn-round btn-round--red">
-              <p>+</p>
-            </button>
-
-          </form>
+  <div class="page">
+    <header>
+      <div class="header">
+        <div class="header__dashboard">
+          <button class="btn-round btn-round--red btn-round--rotate u-margin-right-m"></button>
+          <button class="btn-long">dashbord</button>
         </div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <div class="progress-block__items"></div>
-        <!-- <a href="#" class="progress-block__archiv">project archiv</a> -->
+        <div class="header__online">
+          <button href ="#" class="btn-round btn-round--green btn-round--scale u-margin-right-m"></button>
+          <select class="select">
+            <option value="value_1">value</option>
+            <option value="value_2">value</option>
+            <option value="value_3">value</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="tab" id="tab">
+        <button class="tab__project active">active project</button>
+        <button class="tab__message">message</button>
+        <div class="tab__free">Search project, user, tasks etc...</div>
       </div>
 
-      <div class="news">
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
-        <div class="news__item"></div>
+      <div class="main-blocks">
+        <div class="progress-block">
+          <div class="progress-block__search">
+            <div class="progress-block__form" action="get">
+              <input class="progress-block__input" type="text" name="" placeholder="Search project with Name, Task, etc...">
+              <div>
+                <select class="select u-margin-right-m" name="newProject" aria-placeholder="New Project(descending)">
+                  <option value="project 1">project 1</option>
+                  <option value="project 2">project 2</option>
+                  <option value="project 3">project 3</option>
+                </select>
+                <button class="btn-round btn-round--red btn-round--add"></button>
+              </div>
+            </div>
+          </div>
+          <div class="progress-block__progress">
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">23%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">43%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">29%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">29%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">29%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">98%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">80%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">23%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">30%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">13%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">3%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">17%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+          </div>
+          <!-- <a href="#" class="progress-block__archiv">project archiv</a> -->
+        </div>
+
+        <div class="news">
+          <div class="news__item">
+            <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+            <span class="news__event--day">today,</span> <span class="news__event--time">10:30</span>
+          </div>
+          <div class="news__item">
+            <img class="news__img" src="./img/event_imgTwo.png" alt="person one">
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+            <span class="news__event--day">today,</span> <span class="news__event--time">10:30</span>
+          </div>
+          <div class="news__item">
+            <img class="news__img" src="./img/event_imgThree.png" alt="person one">
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+            <span class="news__event--day">today,</span> <span class="news__event--time">10:30</span>
+          </div><div class="news__item">
+            <img class="news__img" src="./img/event_imgFour.png" alt="person one">
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+            <span class="news__event--day">today,</span> <span class="news__event--time">10:30</span>
+          </div>
+          <div class="news__item">
+            <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+            <span class="news__event--day">today,</span> <span class="news__event--time">10:30</span>
+          </div>
+          <div class="news__item">
+            <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+            <span class="news__event--day">today,</span> <span class="news__event--time">10:30</span>
+          </div><div class="news__item">
+            <img class="news__img" src="./img/event_imgTwo.png" alt="person one">
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+            <span class="news__event--day">today,</span> <span class="news__event--time">10:30</span>
+          </div>
+          <div class="news__item">
+            <img class="news__img" src="./img/event_imgThree.png" alt="person one">
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+            <span class="news__event--day">today,</span> <span class="news__event--time">10:30</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </main>
-  
+    </main>
+  </div>
 </body>
 </html>
-
-    <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="120" viewBox="0 0 480 512" fill="lightgray">
-      <path fill="#000" d="M459.639 428.573h-439.277v-94.13h439.277zM459.639 303.065h-439.277v-94.13h439.277zM459.639 177.558h-439.277v-94.13h439.277z"></path>
-    </svg>
-
-    <div class="upgrade-box">
-      <svg class="upgrade-box__item" version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="120" viewBox="2 0 20 25" fill="lightgray">
-        <title>starburst</title>
-        <path d="M19.064 10.109l1.179-2.387c0.074-0.149 0.068-0.327-0.015-0.471-0.083-0.145-0.234-0.238-0.401-0.249l-2.656-0.172-0.172-2.656c-0.011-0.167-0.104-0.317-0.249-0.401s-0.322-0.090-0.472-0.015l-2.385 1.18-1.477-2.215c-0.186-0.278-0.646-0.278-0.832 0l-1.477 2.215-2.385-1.18c-0.151-0.075-0.327-0.069-0.472 0.015-0.145 0.083-0.238 0.234-0.249 0.401l-0.171 2.656-2.657 0.171c-0.167 0.011-0.318 0.104-0.401 0.249-0.084 0.145-0.089 0.322-0.015 0.472l1.179 2.386-2.214 1.477c-0.139 0.093-0.223 0.249-0.223 0.416s0.083 0.323 0.223 0.416l2.215 1.477-1.18 2.386c-0.074 0.15-0.068 0.327 0.015 0.472 0.083 0.144 0.234 0.238 0.401 0.248l2.656 0.171 0.171 2.657c0.011 0.167 0.104 0.317 0.249 0.401 0.144 0.083 0.32 0.088 0.472 0.015l2.386-1.179 1.477 2.214c0.093 0.139 0.249 0.223 0.416 0.223s0.323-0.083 0.416-0.223l1.477-2.214 2.386 1.179c0.15 0.073 0.327 0.068 0.472-0.015s0.238-0.234 0.249-0.401l0.171-2.656 2.656-0.172c0.167-0.011 0.317-0.104 0.401-0.249 0.083-0.145 0.089-0.322 0.015-0.472l-1.179-2.385 2.214-1.478c0.139-0.093 0.223-0.249 0.223-0.416s-0.083-0.323-0.223-0.416l-2.214-1.475z"></path>
-      </svg>
-    
-      <svg class="upgrade-box__item" version="1.1" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="-18 -24 55 70">
-        <title>atom</title>
-        <path d="M27.888 16.010c1.252-1.389 2.149-2.757 2.672-4.071 0.604-1.525 0.582-2.849-0.064-3.934-0.649-1.087-1.838-1.768-3.531-2.023-1.453-0.22-3.139-0.163-5.029 0.17-0.626-1.735-1.413-3.163-2.341-4.249-1.081-1.264-2.294-1.904-3.602-1.904-1.312 0-2.524 0.644-3.604 1.915-0.929 1.092-1.709 2.521-2.323 4.252-1.891-0.344-3.576-0.404-5.029-0.185-1.693 0.256-2.881 0.937-3.532 2.025-0.646 1.085-0.668 2.408-0.064 3.933 0.52 1.311 1.422 2.678 2.685 4.069-1.262 1.394-2.161 2.759-2.675 4.064-0.6 1.52-0.574 2.84 0.074 3.922 0.647 1.087 1.832 1.771 3.519 2.032 1.448 0.226 3.133 0.168 5.023-0.175 0.624 1.729 1.406 3.156 2.33 4.245 1.074 1.265 2.283 1.905 3.596 1.905 1.309 0 2.521-0.641 3.602-1.904 0.927-1.085 1.713-2.516 2.339-4.258 1.89 0.36 3.57 0.429 5.014 0.204 1.679-0.261 2.866-0.942 3.531-2.032 0.647-1.085 0.669-2.408 0.063-3.934-0.52-1.307-1.411-2.674-2.654-4.067zM13.844 28.804c-0.675-0.861-1.257-2.013-1.733-3.425 1.312-0.357 2.62-0.811 3.897-1.354 1.282 0.55 2.588 1.004 3.896 1.354-0.484 1.409-1.073 2.559-1.755 3.422-1.393 1.767-2.922 1.767-4.305 0.003zM18.148 3.205c0.681 0.869 1.271 2.022 1.755 3.432-1.219 0.329-2.524 0.778-3.895 1.342-1.331-0.542-2.644-1-3.913-1.362 0.484-1.396 1.071-2.543 1.749-3.412 1.385-1.775 2.911-1.775 4.304 0zM23.485 14.804c0.533 0.418 1.020 0.823 1.455 1.212-0.296 0.273-0.605 0.544-0.924 0.806-0.175 0.143-0.352 0.287-0.531 0.433 0.017-0.44 0.024-0.862 0.024-1.262 0.001-0.365-0.007-0.763-0.024-1.189zM23.269 12.019c-0.157-1.373-0.406-2.69-0.741-3.927 1.518-0.299 2.855-0.387 3.979-0.26 1.147 0.129 1.916 0.504 2.283 1.108 0.375 0.629 0.334 1.433-0.127 2.457-0.445 0.994-1.194 2.056-2.23 3.162-0.979-0.896-2.039-1.748-3.164-2.54zM16.009 21.736c-0.901-0.4-1.797-0.852-2.663-1.342-0.988-0.566-1.833-1.084-2.516-1.54-0.075-0.833-0.113-1.795-0.113-2.862 0-1.066 0.038-2.021 0.112-2.844 0.74-0.483 1.596-1.002 2.54-1.536 0.85-0.462 1.736-0.907 2.639-1.325 0.9 0.422 1.787 0.866 2.629 1.317 0.886 0.509 1.742 1.023 2.551 1.534 0.075 0.84 0.112 1.798 0.112 2.854 0 1.067-0.037 2.034-0.112 2.877-0.75 0.492-1.599 1.004-2.532 1.526-0.837 0.48-1.725 0.931-2.647 1.341zM19.736 9.798c-0.332-0.187-0.702-0.385-1.106-0.595 0.64-0.233 1.258-0.438 1.847-0.612 0.145 0.608 0.27 1.225 0.373 1.844-0.356-0.213-0.728-0.426-1.114-0.637zM11.537 8.596c0.6 0.182 1.208 0.386 1.821 0.61-0.38 0.192-0.744 0.39-1.090 0.589-0.387 0.213-0.759 0.425-1.112 0.637 0.108-0.625 0.235-1.24 0.381-1.836zM8.533 17.239c-0.538-0.413-1.030-0.824-1.474-1.229 0.452-0.407 0.942-0.812 1.468-1.212-0.013 0.39-0.019 0.786-0.019 1.193 0.001 0.431 0.009 0.848 0.025 1.248zM9.478 8.062c-0.335 1.274-0.58 2.591-0.729 3.924-1.16 0.826-2.227 1.689-3.181 2.571-1.036-1.104-1.788-2.166-2.24-3.163-0.463-1.021-0.502-1.822-0.117-2.45 0.375-0.617 1.122-0.983 2.285-1.12 0.352-0.041 0.728-0.062 1.117-0.062 0.859 0 1.821 0.101 2.865 0.3zM3.338 20.619c0.447-0.997 1.191-2.058 2.214-3.158 0.964 0.893 2.036 1.761 3.196 2.586 0.149 1.33 0.394 2.631 0.728 3.878-1.516 0.298-2.852 0.386-3.974 0.261-1.154-0.131-1.898-0.499-2.277-1.134-0.383-0.615-0.346-1.41 0.113-2.433zM12.235 22.195c0.348 0.207 0.726 0.413 1.131 0.619-0.633 0.233-1.248 0.435-1.839 0.603-0.145-0.606-0.267-1.215-0.366-1.821 0.358 0.213 0.718 0.414 1.074 0.599zM20.478 23.419c-0.596-0.168-1.212-0.369-1.845-0.603 0.36-0.185 0.74-0.389 1.136-0.612 0.368-0.204 0.729-0.409 1.077-0.612-0.111 0.652-0.234 1.262-0.368 1.827zM22.52 23.928c0.327-1.251 0.572-2.557 0.73-3.896 1.154-0.819 2.221-1.682 3.18-2.569 1.024 1.112 1.769 2.179 2.216 3.173 0.459 1.024 0.5 1.821 0.127 2.438-0.369 0.61-1.135 0.986-2.276 1.12-0.335 0.039-0.693 0.060-1.064 0.060-0.871-0.001-1.848-0.11-2.913-0.326z"></path>
-      </svg> -->
-        <!-- </div> -->
-
-
