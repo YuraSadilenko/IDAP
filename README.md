@@ -1,6 +1,6 @@
 # IDAP
 IDAP Test Task 
-Link to the [GHPage](https://yurasadilenko.github.io/IDAP/src);
+Link to the [GHPage](https://yurasadilenko.github.io/IDAP/dist);
 
 Adopted to tab ports! 
 
