@@ -19,6 +19,7 @@
   }
 
   &--add {
+    padding: 2rem;
     
     &::after {
       content: "";
@@ -27,12 +28,12 @@
       background-size: contain;
       width: 1.5rem;
       height: 1.5rem;
-      transform: translate(-17%, -20%);
+      transform: translate(-45%, -50%);
       transition: all .2s;
     }
 
     &:hover::after {
-      transform: translate(-20%, -20%) rotate(90deg);
+      transform: translate(-48%, -47%) rotate(90deg);
     }
 
   }

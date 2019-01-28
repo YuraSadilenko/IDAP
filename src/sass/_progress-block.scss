@@ -18,7 +18,7 @@
 
   &__search {
     position: static;
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
     border-bottom: 1px solid $border-color;
   }
 
@@ -61,11 +61,13 @@
 
   &__progress-bar {
     display: inline-block;
+    vertical-align: center;
     padding: .8rem;
     background-color: $red-color-main;
     color: $white-color;
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: 100;
+    font-family: Helvetica, Arial, sans-serif;
     margin-right: 1rem;
   }
 

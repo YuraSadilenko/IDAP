@@ -1,5 +1,4 @@
 .navigation {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,19 +8,45 @@
   background-color: $bg-nav;
   text-align: center;
 
+  &__person {
+    padding: 2rem 0 0 0;
+    height: 7rem;
+    margin-bottom: 2rem;
+
+    &--size {
+      width: 70%;
+      height: auto;
+    }
+  }
+
   &__board {
+    position: relative;
     width: 100%;
+    margin-bottom: 2rem;
+
+  
+    &::after {
+      display: none;
+      transition: all .4s;
+    }
 
     &:hover {
+      color: $white-color;
       &::after {
         content: "";
         display: block;
-
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        border-radius: 10px;
+        background-color: $red-color-main;
       }
     }
 
     &--icon {
-      width: 65%;
+      width: 45%;
       fill: #4d4f51;
       transition: all .4s;
     }
@@ -29,9 +54,31 @@
 
   &__project {
     width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::after {
+      display: none;
+      transition: all .4s;
+    }
+
+    &:hover {
+      color: $white-color;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        border-radius: 10px;
+        background-color: $red-color-main;
+      }
+    }
 
     &--icon {
-      width: 65%;
+      width: 40%;
       fill: #4d4f51;
       transition: all .4s;
     }
@@ -39,29 +86,97 @@
 
   &__settings {
     width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+
+
+    &::after {
+      display: none;
+      transition: all .4s;
+    }
+
+    &:hover {
+      color: $white-color;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        border-radius: 10px;
+        background-color: $red-color-main;
+      }
+    }
 
     &--icon {
-      width: 65%;
+      width: 45%;
       fill: #4d4f51;
       transition: all .4s;
     }
   }
 
   &__upgrade {
+    position: relative;
     width: 100%;
+    margin-bottom: 2rem;
+
+    &::after {
+      display: none;
+      transition: all .4s;
+    }
+
+    &:hover {
+      color: $white-color;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        border-radius: 10px;
+        background-color: $red-color-main;
+      }
+    }
 
     &--icon {
-      width: 65%;
+      width: 45%;
       fill: #4d4f51;
       transition: all .4s;
     }
   }
 
   &__login {
-        width: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+
+
+    &::after {
+      display: none;
+      transition: all .4s;
+    }
+
+    &:hover {
+      color: $white-color;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        border-radius: 10px;
+        background-color: $red-color-main;
+      }
+    }
 
     &--icon {
-      width: 65%;
+      width: 45%;
       fill: #4d4f51;
       transition: all .4s;
     }
@@ -72,24 +187,42 @@
     text-transform: capitalize;
     color: $nav-text;
     margin: 0;
+    margin-bottom: 1rem;
   }
 }
-.navigation__board .navigation__board--icon:hover {
+.navigation__board:hover .navigation__board--icon {
   fill: $red-color-main;
 }
 
-.navigation__project .navigation__project--icon:hover {
-  fill: $red-color-main;
+.navigation__board:hover .navigation__descr {
+  color: $white-color;
 }
 
-.navigation__settings .navigation__settings--icon:hover {
+
+.navigation__project:hover .navigation__project--icon {
   fill: $red-color-main;
 }
-
-.navigation__upgrade .navigation__upgrade--icon:hover {
-  fill: $red-color-main;
+.navigation__project:hover .navigation__descr {
+  color: $white-color;
 }
 
-.navigation__login .navigation__login--icon:hover {
+.navigation__settings:hover .navigation__settings--icon {
   fill: $red-color-main;
+}
+.navigation__settings:hover .navigation__descr {
+  color: $white-color;
+}
+
+.navigation__upgrade:hover .navigation__upgrade--icon {
+  fill: $red-color-main;
+}
+.navigation__upgrade:hover .navigation__descr {
+  color: $white-color;
+}
+
+.navigation__login:hover .navigation__login--icon {
+  fill: $red-color-main;
+}
+.navigation__login:hover .navigation__descr {
+  color: $white-color;
 }
