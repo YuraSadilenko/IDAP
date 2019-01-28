@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>IDAP Test Task</title>
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="navigation__nav-upper">
+      <div class="navigation__person">
+        <img class="navigation__person--foto" src="./img/nav_img.png" alt="person">
+        <span class="alert alert--active">2</span>
+      </div>
+
+      <div class="dots"></div>
+
+      <div class="navigation__board">
+        <svg class="navigation__board--icon" xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 0 512 512"
+          width="512px">
+          <path d="m295.320312 313.890625-24.667968-112.566406-.011719.003906c-1.21875-5.542969-5.53125-10.152344-11.441406-11.445313-8.09375-1.769531-16.085938 3.359376-17.851563 11.453126l-24.574218 112.484374c-16.660157 12.144532-27.511719 31.796876-27.511719 53.949219 0 36.796875 29.9375 66.738281 66.738281 66.738281s66.742188-29.9375 66.742188-66.738281c-.003907-22.109375-10.816407-41.730469-27.421876-53.878906zm-39.296874-39.175781 5.828124 26.585937c-1.929687-.167969-3.878906-.273437-5.851562-.273437-1.949219 0-3.875.101562-5.78125.269531zm-.023438 129.792968c-20.257812 0-36.738281-16.480468-36.738281-36.742187 0-20.257813 16.480469-36.738281 36.738281-36.738281s36.738281 16.480468 36.738281 36.738281-16.480469 36.742187-36.738281 36.742187zm0 0" />
+          <path d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469s-132.667969 26.628906-181.019531 74.980469c-48.351563 48.351562-74.980469 112.640625-74.980469 181.019531 0 64.316406 23.945312 125.800781 67.421875 173.136719 23.742187 25.84375 51.953125 46.210937 83.847656 60.523437 33.019531 14.824219 68.257813 22.339844 104.730469 22.339844 36.246094 0 71.28125-7.425781 104.132812-22.070312 31.730469-14.144532 59.84375-34.28125 83.566407-59.84375 44.042969-47.46875 68.300781-109.292969 68.300781-174.085938 0-68.378906-26.628906-132.667969-74.980469-181.019531zm-15.308593 334.699219c-89.851563 96.832031-242.949219 96.316406-332.195313-.839844-80.128906-87.230469-80.742187-225.226563 6.679687-312.644532 88.320313-88.320312 231.277344-88.332031 319.609376 0 86.792968 86.789063 87.761718 225.261719 5.90625 313.484376zm0 0" />
+          <path d="m256 57.550781c-110.535156 0-200.460938 89.925781-200.460938 200.460938 0 41.59375 12.621094 81.46875 36.496094 115.347656.003906.011719.015625.023437.019532.03125.0625.085937.117187.171875.179687.257813l.007813-.007813c2.71875 3.835937 7.179687 6.347656 12.238281 6.347656h48.34375c8.285156 0 15-6.71875 15-15 0-8.285156-6.714844-15-15-15h-40.363281c-14.757813-22.960937-23.667969-48.863281-26.179688-75.988281h44.257812c8.285157 0 15-6.714844 15-15s-6.714843-15-15-15h-44.421874c2.8125-34.378906 15.863281-65.902344 36.101562-91.503906l28.96875 28.96875c5.859375 5.859375 15.394531 6.007812 21.253906.148437 5.855469-5.859375 5.816406-15.503906-.042968-21.359375l-29.582032-29.582031c26.617188-23.683594 60.675782-39.164063 98.183594-42.449219v37.976563c0 8.285156 6.71875 15 15 15 8.285156 0 15-6.714844 15-15v-37.980469c37.527344 3.289062 71.597656 18.78125 98.21875 42.484375l-29.546875 29.550781c-5.859375 5.855469-5.832031 15.382813.027344 21.242188s15.324219 5.828125 21.183593-.03125l28.933594-28.929688c20.214844 25.59375 33.257813 57.101563 36.066406 91.464844h-44.421874c-8.28125 0-15 6.714844-15 15s6.71875 15 15 15h44.261718c-2.515625 27.125-11.425781 53.027344-26.183594 75.984375h-40.265624c-8.28125 0-15 6.71875-15 15 0 8.285156 6.71875 15 15 15h48.246093c5.058594 0 9.519531-2.507813 12.238281-6.34375l.007813.007813c.058594-.085938.117187-.167969.175781-.25.007813-.015626.019532-.027344.027344-.042969 23.875-33.878907 36.492188-73.753907 36.492188-115.34375 0-110.53125-89.925782-200.460938-200.460938-200.460938zm0 0" />
+        </svg>
+        <p class="navigation__descr">board</p>
+      </div>
+
+      <div class="dots"></div>
+
+      <div class="navigation__project">
+        <span class="alert alert--checked">9</span>
+        <svg class="navigation__project--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="80px" viewBox="0 0 124 124" style="enable-background:new 0 0 124 124;"
+          xml:space="preserve">
+          <path d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z" />
+          <path d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z" />
+          <path d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z" />
+        </svg>
+        <p class="navigation__descr">projects</p>
+      </div>
+
+      <div class="dots"></div>
+
+      <div class="navigation__settings">
+        <svg class="navigation__settings--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="80px" viewBox="0 0 268.765 268.765" style="enable-background:new 0 0 268.765 268.765;"
+          xml:space="preserve">
+          <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M267.92,119.461c-0.425-3.778-4.83-6.617-8.639-6.617
+          c-12.315,0-23.243-7.231-27.826-18.414c-4.682-11.454-1.663-24.812,7.515-33.231c2.889-2.641,3.24-7.062,0.817-10.133
+          c-6.303-8.004-13.467-15.234-21.289-21.5c-3.063-2.458-7.557-2.116-10.213,0.825c-8.01,8.871-22.398,12.168-33.516,7.529
+          c-11.57-4.867-18.866-16.591-18.152-29.176c0.235-3.953-2.654-7.39-6.595-7.849c-10.038-1.161-20.164-1.197-30.232-0.08
+          c-3.896,0.43-6.785,3.786-6.654,7.689c0.438,12.461-6.946,23.98-18.401,28.672c-10.985,4.487-25.272,1.218-33.266-7.574
+          c-2.642-2.896-7.063-3.252-10.141-0.853c-8.054,6.319-15.379,13.555-21.74,21.493c-2.481,3.086-2.116,7.559,0.802,10.214
+          c9.353,8.47,12.373,21.944,7.514,33.53c-4.639,11.046-16.109,18.165-29.24,18.165c-4.261-0.137-7.296,2.723-7.762,6.597
+          c-1.182,10.096-1.196,20.383-0.058,30.561c0.422,3.794,4.961,6.608,8.812,6.608c11.702-0.299,22.937,6.946,27.65,18.415
+          c4.698,11.454,1.678,24.804-7.514,33.23c-2.875,2.641-3.24,7.055-0.817,10.126c6.244,7.953,13.409,15.19,21.259,21.508
+          c3.079,2.481,7.559,2.131,10.228-0.81c8.04-8.893,22.427-12.184,33.501-7.536c11.599,4.852,18.895,16.575,18.181,29.167
+          c-0.233,3.955,2.67,7.398,6.595,7.85c5.135,0.599,10.301,0.898,15.481,0.898c4.917,0,9.835-0.27,14.752-0.817
+          c3.897-0.43,6.784-3.786,6.653-7.696c-0.451-12.454,6.946-23.973,18.386-28.657c11.059-4.517,25.286-1.211,33.281,7.572
+          c2.657,2.89,7.047,3.239,10.142,0.848c8.039-6.304,15.349-13.534,21.74-21.494c2.48-3.079,2.13-7.559-0.803-10.213
+          c-9.353-8.47-12.388-21.946-7.529-33.524c4.568-10.899,15.612-18.217,27.491-18.217l1.662,0.043
+          c3.853,0.313,7.398-2.655,7.865-6.588C269.044,139.917,269.058,129.639,267.92,119.461z M134.595,179.491
+          c-24.718,0-44.824-20.106-44.824-44.824c0-24.717,20.106-44.824,44.824-44.824c24.717,0,44.823,20.107,44.823,44.824
+          C179.418,159.385,159.312,179.491,134.595,179.491z" />
+        </svg>
+        <p class="navigation__descr">settings</p>
+      </div>
+    </div>
+
+    <div class="navigation__nav-lower">
+      <div class="navigation__upgrade">
+        <svg class="navigation__upgrade--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="100px"
+          height="80px">
+          <path d="M 25 2 C 12.318 2 2 12.317 2 25 C 2 37.683 12.318 48 25 48 C 37.682 48 48 37.683 48 25 C 48 12.317 37.682 2 25 2 z M 17.761719 9.0292969 C 19.882766 8.8699219 22.4305 9.9196562 25 11.910156 C 28.425 9.2561563 31.810172 8.2735625 34.201172 9.6015625 C 35.394172 10.264563 36.249781 11.455969 36.675781 13.042969 C 37.108781 14.660969 37.100078 16.645078 36.705078 18.830078 C 40.598078 20.273078 43 22.462 43 25 C 43 27.538 40.598125 29.725922 36.703125 31.169922 C 37.098125 33.355922 37.106828 35.342938 36.673828 36.960938 C 36.248828 38.547938 35.394172 39.737391 34.201172 40.400391 C 33.484172 40.798391 32.677641 40.988281 31.806641 40.988281 C 29.775641 40.988281 27.396047 39.940031 24.998047 38.082031 C 22.600047 39.940031 20.220453 40.988281 18.189453 40.988281 C 17.318453 40.988281 16.514875 40.799391 15.796875 40.400391 C 14.603875 39.737391 13.748266 38.547937 13.322266 36.960938 C 12.889266 35.342937 12.897969 33.355922 13.292969 31.169922 C 9.4019687 29.725922 7 27.538 7 25 C 7 22.463 9.4019219 20.274078 13.294922 18.830078 C 12.899922 16.644078 12.891219 14.659969 13.324219 13.042969 C 13.749219 11.454969 14.605828 10.264563 15.798828 9.6015625 C 16.396078 9.2695625 17.054703 9.0824219 17.761719 9.0292969 z M 18.240234 11.001953 C 17.683234 11.001953 17.188531 11.116609 16.769531 11.349609 C 16.051531 11.748609 15.540859 12.492594 15.255859 13.558594 C 14.913859 14.835594 14.912891 16.43375 15.212891 18.21875 C 16.602891 17.83275 18.126625 17.529266 19.765625 17.322266 C 20.952625 15.760266 22.198891 14.386609 23.462891 13.224609 C 21.500891 11.764609 19.669234 11.001953 18.240234 11.001953 z M 31.759766 11.001953 C 30.329766 11.001953 28.496156 11.764609 26.535156 13.224609 C 27.798156 14.386609 29.047375 15.760266 30.234375 17.322266 C 31.873375 17.528266 33.397109 17.83275 34.787109 18.21875 C 35.087109 16.43375 35.084187 14.835594 34.742188 13.558594 C 34.456187 12.492594 33.948469 11.748609 33.230469 11.349609 C 32.811469 11.117609 32.315766 11.001953 31.759766 11.001953 z M 25 14.486328 C 24.172 15.234328 23.334859 16.101125 22.505859 17.078125 C 23.319859 17.032125 24.147 17 25 17 C 25.853 17 26.679141 17.032125 27.494141 17.078125 C 26.664141 16.101125 25.827 15.234328 25 14.486328 z M 25 19 C 23.534 19 22.146031 19.084609 20.832031 19.224609 C 20.258031 20.025609 19.693484 20.877109 19.146484 21.787109 C 18.506484 22.854109 17.936547 23.932 17.435547 25 C 17.937547 26.069 18.506484 27.146891 19.146484 28.212891 C 19.693484 29.124891 20.261891 29.972391 20.837891 30.775391 C 22.150891 30.915391 23.536 31 25 31 C 26.464 31 27.848156 30.916344 29.160156 30.777344 C 29.736156 29.975344 30.304563 29.125891 30.851562 28.212891 C 31.491563 27.145891 32.0615 26.069953 32.5625 25.001953 C 32.0615 23.932953 31.491562 22.855062 30.851562 21.789062 C 30.305562 20.878062 29.741969 20.025609 29.167969 19.224609 C 27.853969 19.084609 26.466 19 25 19 z M 18.158203 19.611328 C 17.269203 19.778328 16.426484 19.973312 15.646484 20.195312 C 15.854484 20.967312 16.113063 21.761313 16.414062 22.570312 C 16.734063 21.966313 17.070641 21.362766 17.431641 20.759766 C 17.667641 20.366766 17.913203 19.989328 18.158203 19.611328 z M 31.839844 19.611328 C 32.084844 19.989328 32.330406 20.366766 32.566406 20.759766 C 32.928406 21.362766 33.262031 21.966313 33.582031 22.570312 C 33.883031 21.761312 34.143563 20.967312 34.351562 20.195312 C 33.572562 19.973312 32.729844 19.778328 31.839844 19.611328 z M 13.748047 20.830078 C 10.759047 21.988078 9 23.536 9 25 C 9 26.465 10.76 28.011922 13.75 29.169922 C 14.118 27.821922 14.615281 26.423953 15.238281 25.001953 C 14.615281 23.578953 14.116047 22.178078 13.748047 20.830078 z M 36.25 20.830078 C 35.882 22.178078 35.385719 23.578953 34.761719 25.001953 C 35.384719 26.423953 35.880047 27.823875 36.248047 29.171875 C 39.238047 28.012875 41 26.465 41 25 C 41 23.535 39.24 21.988078 36.25 20.830078 z M 25 23 C 26.105 23 27 23.895 27 25 C 27 26.105 26.105 27 25 27 C 23.895 27 23 26.105 23 25 C 23 23.895 23.895 23 25 23 z M 16.416016 27.429688 C 16.115016 28.237687 15.856438 29.032688 15.648438 29.804688 C 16.425438 30.026688 17.263391 30.220719 18.150391 30.386719 C 17.907391 30.011719 17.667594 29.632188 17.433594 29.242188 C 17.071594 28.639187 16.736016 28.033688 16.416016 27.429688 z M 33.583984 27.429688 C 33.263984 28.033687 32.927406 28.639187 32.566406 29.242188 C 32.332406 29.633188 32.092609 30.012672 31.849609 30.388672 C 32.735609 30.221672 33.574563 30.026688 34.351562 29.804688 C 34.143563 29.033687 33.883984 28.237687 33.583984 27.429688 z M 15.212891 31.78125 C 14.912891 33.56725 14.913859 35.166359 15.255859 36.443359 C 15.541859 37.509359 16.051531 38.253344 16.769531 38.652344 C 18.261531 39.480344 20.732125 38.796391 23.453125 36.775391 C 22.191125 35.613391 20.944766 34.237734 19.759766 32.677734 C 18.121766 32.471734 16.600891 32.16625 15.212891 31.78125 z M 34.787109 31.78125 C 33.399109 32.16625 31.875281 32.471734 30.238281 32.677734 C 29.052281 34.238734 27.806922 35.614391 26.544922 36.775391 C 29.265922 38.796391 31.737469 39.481344 33.230469 38.652344 C 33.948469 38.253344 34.457187 37.509359 34.742188 36.443359 C 35.084187 35.166359 35.087109 33.56725 34.787109 31.78125 z M 22.513672 32.921875 C 23.339672 33.893875 24.173047 34.768672 24.998047 35.513672 C 25.823047 34.768672 26.658375 33.894875 27.484375 32.921875 C 26.673375 32.967875 25.849 33 25 33 C 24.151 33 23.325672 32.967875 22.513672 32.921875 z" />
+        </svg>
+        <p class="navigation__descr">upgrade</p>
+      </div>
+
+      <div class="dots"></div>
+
+      <div class="navigation__login">
+        <svg class="navigation__login--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="354.487px" height="80px" viewBox="0 0 354.487 354.487" style="enable-background:new 0 0 354.487 354.487;"
+          xml:space="preserve">
+          <path d="M177.241,112.284c-11.887,0-21.521,11.013-21.521,24.596v80.723c0,13.582,9.635,24.595,21.521,24.595
+            s21.519-11.013,21.519-24.595V136.88C198.76,123.297,189.128,112.284,177.241,112.284z" />
+          <path d="M177.241,0C79.504,0,0,79.51,0,177.241c0,97.736,79.51,177.246,177.241,177.246c97.731,0,177.246-79.516,177.246-177.246
+            C354.487,79.504,274.979,0,177.241,0z M177.241,311.444c-73.994,0-134.198-60.203-134.198-134.203
+            c0-73.995,60.204-134.199,134.198-134.199c74,0,134.204,60.204,134.204,134.199C311.445,251.241,251.241,311.444,177.241,311.444z" />
+        </svg>
+        <p class="navigation__descr">login</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <header>
+      <div class="header">
+        <div class="header__dashboard">
+          <button class="btn-round btn-round--red btn-round--rotate btn-round--reload u-margin-right-m"></button>
+          <button class="btn-long btn-long--bold">dashbord</button>
+        </div>
+        <div class="header__online">
+          <button href="#" class="btn-round btn-round--green btn-round--select-white u-margin-right-m"></button>
+          <select class="select select--upper">
+            <option value="value_1">value</option>
+            <option value="value_2">value</option>
+            <option value="value_3">value</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="tab" id="tab">
+        <button class="tab__project active">active project
+          <span class="alert alert--active">2</span>
+        </button>
+        <button class="tab__message">message
+          <span class="alert alert--checked">6</span>
+        </button>
+        <div class="tab__free">Search project, user, tasks etc...</div>
+      </div>
+
+      <div class="main-blocks">
+        <div class="progress-block">
+          <div class="progress-block__search">
+            <div class="progress-block__form" action="get">
+              <input class="progress-block__input" type="text" name="" placeholder="Search project with Name, Task, etc...">
+              <div class="progress-block__add-project">
+                <select class="select u-margin-right-m" name="newProject" aria-placeholder="New Project(descending)">
+                  <option value="project 1">project 1</option>
+                  <option value="project 2">project 2</option>
+                  <option value="project 3">project 3</option>
+                </select>
+                <button class="btn-round btn-round--red btn-round--add"></button>
+              </div>
+            </div>
+          </div>
+          <div class="progress-block__progress">
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">23%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">43%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items progress-block__done">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">29%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="done-box">
+                <div class="news__person-box">
+                  <span class="news__person-online"></span>
+                  <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+                </div>
+                <div class="news__person-box">
+                  <span class="news__person-online"></span>
+                  <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+                </div>
+                <div class="news__person-box">
+                  <span class="news__person-online"></span>
+                  <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+                </div>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">29%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">29%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">98%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">80%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">23%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">30%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">13%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">3%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+            <div class="progress-block__items">
+              <div class="progress-block__items--left">
+                <span class="progress-block__progress-bar">17%</span>
+                <p class="progress-block__progress-name">Create Contact Formular</p>
+              </div>
+              <div class="progress-block__items--right">
+                <button class="btn-long btn-long--region">worlda</button>
+                <button class="btn-round btn-round--border btn-round--search"></button>
+                <button class="btn-round btn-round--border btn-round--select"></button>
+              </div>
+            </div>
+          </div>
+          <div class="progress-block__archiv">
+            <a href="#" class="progress-block__archiv">project archiv &gt;</a>
+          </div>
+        </div>
+
+        <div class="news">
+          <div class="news__item">
+            <div class="news__person-box">
+              <span class="news__person-online"></span>
+              <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            </div>
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+              <span class="news__event--day">today,</span> <span class="news__event--time">10:30 PM</span>
+          </div>
+          <div class="news__item">
+            <div class="news__person-box">
+              <span class="news__person-online"></span>
+              <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            </div>
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+              <span class="news__event--day">today,</span> <span class="news__event--time">10:30 PM</span>
+          </div>
+          <div class="news__item">
+            <div class="news__person-box">
+              <span class="news__person-online"></span>
+              <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            </div>
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+              <span class="news__event--day">today,</span> <span class="news__event--time">10:30 PM</span>
+          </div>
+          <div class="news__item">
+            <div class="news__person-box">
+              <span class="news__person-online"></span>
+              <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            </div>
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+              <span class="news__event--day">today,</span> <span class="news__event--time">10:30 PM</span>
+          </div>
+          <div class="news__item">
+            <div class="news__person-box">
+              <span class="news__person-online"></span>
+              <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            </div>
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+              <span class="news__event--day">today,</span> <span class="news__event--time">10:30 PM</span>
+          </div>
+          <div class="news__item">
+            <div class="news__person-box">
+              <span class="news__person-online"></span>
+              <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            </div>
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+              <span class="news__event--day">today,</span> <span class="news__event--time">10:30 PM</span>
+          </div>
+          <div class="news__item">
+            <div class="news__person-box">
+              <span class="news__person-online"></span>
+              <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            </div>
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+              <span class="news__event--day">today,</span> <span class="news__event--time">10:30 PM</span>
+          </div>
+          <div class="news__item">
+            <div class="news__person-box">
+              <span class="news__person-online"></span>
+              <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            </div>
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+              <span class="news__event--day">today,</span> <span class="news__event--time">10:30 PM</span>
+          </div>
+          <div class="news__item">
+            <div class="news__person-box">
+              <span class="news__person-online"></span>
+              <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            </div>
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+              <span class="news__event--day">today,</span> <span class="news__event--time">10:30 PM</span>
+          </div>
+          <div class="news__item">
+            <div class="news__person-box">
+              <span class="news__person-online"></span>
+              <img class="news__img" src="./img/events_imgOne.png" alt="person one">
+            </div>
+            <p class="news__event"><span class="news__event--name">Mark O.</span>added an image at WorldA</br>
+              <span class="news__event--day">today,</span> <span class="news__event--time">10:30 PM</span>
+          </div>
+          <div class="progress-block__archiv">
+              <a href="#" class="progress-block__archiv">project archiv &gt;</a>
+            </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

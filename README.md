@@ -1,3 +1,14 @@
 # IDAP
 IDAP Test Task 
-[GHPage](https://yurasadilenko.github.io/IDAP/src)
+Link to the [GHPage](https://yurasadilenko.github.io/IDAP/src);
+
+Adopted to tab ports! 
+
+Used only html and css (Sass(scss)), all file compiled and build with gulp.
+No frameworks or libraries used.
+
+All svg images taken from the Internet.
+
+Final build in dist folder.
+
+Thanks for you test task and time!
