@@ -1,6 +1,95 @@
 .navigation {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 8%;
   height: 100vh;
   background-color: $bg-nav;
+  text-align: center;
+
+  &__board {
+    width: 100%;
+
+    &:hover {
+      &::after {
+        content: "";
+        display: block;
+
+      }
+    }
+
+    &--icon {
+      width: 65%;
+      fill: #4d4f51;
+      transition: all .4s;
+    }
+  }
+
+  &__project {
+    width: 100%;
+
+    &--icon {
+      width: 65%;
+      fill: #4d4f51;
+      transition: all .4s;
+    }
+  }
+
+  &__settings {
+    width: 100%;
+
+    &--icon {
+      width: 65%;
+      fill: #4d4f51;
+      transition: all .4s;
+    }
+  }
+
+  &__upgrade {
+    width: 100%;
+
+    &--icon {
+      width: 65%;
+      fill: #4d4f51;
+      transition: all .4s;
+    }
+  }
+
+  &__login {
+        width: 100%;
+
+    &--icon {
+      width: 65%;
+      fill: #4d4f51;
+      transition: all .4s;
+    }
+  }
+
+  &__descr {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: $nav-text;
+    margin: 0;
+  }
+}
+.navigation__board .navigation__board--icon:hover {
+  fill: $red-color-main;
+}
+
+.navigation__project .navigation__project--icon:hover {
+  fill: $red-color-main;
+}
+
+.navigation__settings .navigation__settings--icon:hover {
+  fill: $red-color-main;
+}
+
+.navigation__upgrade .navigation__upgrade--icon:hover {
+  fill: $red-color-main;
+}
+
+.navigation__login .navigation__login--icon:hover {
+  fill: $red-color-main;
 }
