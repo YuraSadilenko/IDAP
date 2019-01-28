@@ -18,6 +18,20 @@
     outline: none;
   }
 
+  &--reload {
+    &::after {
+      content: "";
+      display: block;
+      background-image: url(../img/svg/reload.svg);
+      background-size: contain;
+      width: 2rem;
+      height: 2rem;
+      transform: translate(-27%, -31%);
+      transition: all .2s;
+    }
+
+  }
+
   &--add {
     padding: 2rem;
     
@@ -64,6 +78,23 @@
       }
   }
 
+  &--select-white {
+    &::after {
+      content: "";
+      display: block;
+      background-image: url(../img/svg/arrow-down-sign-to-navigate.svg);
+      background-size: contain;
+      width: 1.5rem;
+      height: 1.5rem;
+      transform: translate(-21%, -17%);
+      transition: all .2s;
+    }
+    &:hover::after {
+      background-image: url(../img/svg/up-arrow.svg);
+      background-size: contain;
+    }
+  }
+  
   &--select {
     &::after {
       content: "";
@@ -74,13 +105,13 @@
       height: 1.5rem;
       transform: translate(-21%, -17%);
       transition: all .2s;
+      }
+      &:hover::after {
+        background-image: url(../img/svg/up-arrow.svg);
+        background-size: contain;
+      }
     }
-
-    &:hover::after {
-      background-image: url(../img/svg/up-arrow.svg);
-      background-size: contain;
-    }
-  }
+  
 
   &__refresh {
     display: inline-block;

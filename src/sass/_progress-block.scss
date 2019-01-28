@@ -62,10 +62,11 @@
   &__progress-bar {
     display: inline-block;
     vertical-align: center;
-    padding: .8rem;
+    padding: .3rem .5rem;
+    font-size: 1.9rem;
     background-color: $red-color-main;
     color: $white-color;
-    border-radius: 10px;
+    border-radius: 7px;
     font-weight: 100;
     font-family: Helvetica, Arial, sans-serif;
     margin-right: 1rem;
@@ -75,4 +76,21 @@
     display: inline-block;
     font-weight: 600;
   }
+
+  &__done {
+    background-color: $bg-color-lightgray;
+    color: #a7a7a7;
+  }
+}
+
+.progress-block__done .progress-block__progress-bar {
+  background-color: $bg-color-lightgray;
+  border: 1px solid gray;
+  color: gray;
+}
+
+.progress-block__done .news__person-box img {
+  width: 3.5rem;
+  height: 3.5rem;
+  
 }

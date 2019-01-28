@@ -9,11 +9,12 @@
   text-align: center;
 
   &__person {
+    position: relative;
     padding: 2rem 0 0 0;
     height: 7rem;
     margin-bottom: 2rem;
 
-    &--size {
+    &--foto {
       width: 70%;
       height: auto;
     }
@@ -23,8 +24,8 @@
     position: relative;
     width: 100%;
     margin-bottom: 2rem;
+    cursor: pointer;
 
-  
     &::after {
       display: none;
       transition: all .4s;
@@ -56,6 +57,7 @@
     width: 100%;
     position: relative;
     margin-bottom: 2rem;
+    cursor: pointer;
 
     &::after {
       display: none;
@@ -88,7 +90,7 @@
     width: 100%;
     position: relative;
     margin-bottom: 2rem;
-
+    cursor: pointer;
 
     &::after {
       display: none;
@@ -121,6 +123,7 @@
     position: relative;
     width: 100%;
     margin-bottom: 2rem;
+    cursor: pointer;
 
     &::after {
       display: none;
@@ -153,7 +156,7 @@
     position: relative;
     width: 100%;
     margin-bottom: 2rem;
-
+    cursor: pointer;
 
     &::after {
       display: none;

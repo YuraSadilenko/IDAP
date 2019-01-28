@@ -1,9 +1,10 @@
 .select {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   background-color: transparent;
   font-size: 1.5rem;
-  padding: .6rem .8rem;
+  padding: .6rem 3rem .6rem 3rem;
   line-height: 2rem;
   border: 1px solid $dark-grey;
   border-radius: 10rem;
@@ -11,8 +12,24 @@
   text-decoration: none;
   color: $dark-grey;
   outline: none;
+  appearance: none;
+  background-image: url(../img/svg/angle-arrow-down.svg) right center no-repeat;
 
   &:focus {
     outline: none;
+  }
+
+  &::before {
+    content: "";
+    top: 0;
+    right: 5px;
+    display: block;
+    background-image: url(../img/svg/angle-arrow-down.svg);
+    background-position: right center;
+    background-repeat: no-repeat;      
+    width: 10.5rem;
+    height: 10.5rem;
+    transform: translate(-21%, -17%);
+    transition: all .2s;
   }
 }
