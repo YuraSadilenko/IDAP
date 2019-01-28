@@ -7,9 +7,8 @@
   &__dashboard {
     vertical-align: center;
   }
-
-  &__online {
-    
+  @include respond(tab-port) {
+    padding: 2rem 2rem;
   }
 
 }

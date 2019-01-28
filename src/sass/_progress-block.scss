@@ -5,6 +5,12 @@
   overflow: hidden;
   border-radius: 4px;
 
+  @include respond(tab-port) {
+    width: 100%;
+    height: auto;
+  }
+
+
   &__progress {
     overflow: hidden;
     overflow-y: scroll;
@@ -21,6 +27,23 @@
     padding: 1rem 2rem;
     border-bottom: 1px solid $border-color;
   }
+
+  &__add-project {
+    @include respond(tab-land) {
+      display: flex
+    }
+  }
+
+  &__archiv {
+    position: static;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid $border-color;
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+
 
   &__form {
     display: flex;
@@ -92,5 +115,5 @@
 .progress-block__done .news__person-box img {
   width: 3.5rem;
   height: 3.5rem;
-  
 }
+

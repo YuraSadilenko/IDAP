@@ -8,6 +8,15 @@
   background-color: $bg-nav;
   text-align: center;
 
+  @include respond(tab-land) {
+    width: 10%;
+  }
+
+  @include respond(tab-land) {
+    height: auto;
+  }
+
+
   &__person {
     position: relative;
     padding: 2rem 0 0 0;

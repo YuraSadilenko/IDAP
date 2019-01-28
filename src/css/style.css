@@ -27,6 +27,12 @@ body {
   width: 92%;
 }
 
+@media (max-width: 60rem) {
+  .page {
+    width: 90%;
+  }
+}
+
 .u-margin-right-m {
   margin-right: 2rem;
 }
@@ -364,6 +370,18 @@ body {
   text-align: center;
 }
 
+@media (max-width: 74.8rem) {
+  .navigation {
+    width: 10%;
+  }
+}
+
+@media (max-width: 74.8rem) {
+  .navigation {
+    height: auto;
+  }
+}
+
 .navigation__person {
   position: relative;
   padding: 2rem 0 0 0;
@@ -673,6 +691,12 @@ body {
   vertical-align: center;
 }
 
+@media (max-width: 60rem) {
+  .header {
+    padding: 2rem 2rem;
+  }
+}
+
 .tab {
   display: -webkit-box;
   display: -webkit-flex;
@@ -755,6 +779,12 @@ body {
   color: gray;
 }
 
+@media (max-width: 60rem) {
+  .tab__free {
+    display: none;
+  }
+}
+
 .tab__project:focus, .tab__message:focus, .tab__free:focus {
   outline: none;
 }
@@ -776,6 +806,22 @@ body {
   padding: 2rem 5rem;
 }
 
+@media (max-width: 74.8rem) {
+  .main-blocks {
+    padding: 1.5rem 3rem;
+  }
+}
+
+@media (max-width: 60rem) {
+  .main-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
 .progress-block {
   border: 1px solid #d3d7da;
   width: 60%;
@@ -783,6 +829,13 @@ body {
   overflow: hidden;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+}
+
+@media (max-width: 60rem) {
+  .progress-block {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .progress-block__progress {
@@ -800,6 +853,25 @@ body {
   position: static;
   padding: 1rem 2rem;
   border-bottom: 1px solid #d3d7da;
+}
+
+@media (max-width: 74.8rem) {
+  .progress-block__add-project {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.progress-block__archiv {
+  position: static;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #d3d7da;
+  text-decoration: none;
+  color: #5c5c5c;
+  font-size: 1.5rem;
+  text-transform: capitalize;
 }
 
 .progress-block__form {
@@ -902,6 +974,19 @@ body {
   transition: all .6s;
   overflow-y: scroll;
   color: #787878;
+}
+
+@media (max-width: 74.8rem) {
+  .news {
+    width: 38%;
+  }
+}
+
+@media (max-width: 60rem) {
+  .news {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .news__person-box {
